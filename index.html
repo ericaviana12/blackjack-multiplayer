@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack - Multiplayer</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blackjack - Multiplayer</h1>
+        <p id="turno-atual">É a vez do Jogador 1</p> <!-- Indica qual jogador está jogando -->
+        <div class="mesa">
+            <div class="mao" id="jogador1">
+                <h2>Jogador 1</h2>
+                <div class="cartas"></div>
+                <p id="pontos-jogador1">Pontos: 0</p>
+            </div>
+            <div class="mao" id="jogador2">
+                <h2>Jogador 2</h2>
+                <div class="cartas"></div>
+                <p id="pontos-jogador2">Pontos: 0</p>
+            </div>
+        </div>
+        <div class="controles">
+            <button onclick="novaRodada()">Nova Rodada</button>
+            <button onclick="comprarCarta()">Comprar Carta</button>
+            <button onclick="parar()">Parar</button>
+        </div>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="blackjack.js"></script>
+</body>
+</html>
